@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    
+    	<%@include file="css/js_css.html" %>
   <title>Steam Main Page</title>
 </head>
 
@@ -23,46 +23,10 @@
 
 <jsp:include page="nav.jsp"/>  
 
-   <!-- Page Content-->
-    <div class="container px-4 px-lg-5"></div>
-        <!-- Heading Row with Bootstrap Carousel-->
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="LoL.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>리그 오브 레전드</h5>
-                        <p>Some description for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Over.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>오버워치</h5>
-                        <p>Some description for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="Battle.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>배틀그라운드</h5>
-                        <p>Some description for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        
+<!-- Page Content-->
         <!-- Call to Action-->
         <div class="card text-white bg-secondary my-5 py-4 text-center">
-            <div class="card-body"><p class="text-white m-0">WELCOME TO JSP GAME COMMUNITY SITE</p></div>
+            <div class="card-body"><p class="text-white m-0">게임 리뷰 사이트 입니다.</p></div>
         </div>
         <!-- Content Row -->
        <div class="row gx-4 gx-lg-5" style="margin-left: 10px;">
@@ -71,10 +35,13 @@
         <!-- Content Row -->
         <div class="row gx-4 gx-lg-5">
             <!-- Card1 -->
-            <div class="col-md-4 mb-5">
+           <div class="col-md-4 mb-5">
                 <div class="card h-100">
                     <div class="card-body">
-                        <img alt="#" src="img/pubg.jpg" width="350px" style="max-width: 100%;margin-top: 16px;height: 188px;">
+                        <div class="card-body">
+                        <img alt="#" src="img/pubg.jpg" width="350px" style="max-width: 100%;
+            height: auto;">
+                    </div>
                     </div>
                     <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">더 보기</a></div>
                 </div>
@@ -106,7 +73,6 @@
             <!-- ... (다른 카드들도 동일하게 수정) ... -->
         </div>
     </div>
-</div>
 <jsp:include page="footer.jsp"/>
 </body>
 </html>
